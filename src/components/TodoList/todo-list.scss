@@ -1,0 +1,35 @@
+#list-section {
+    h2 {
+        font-size: 20px;
+        text-align: center;
+        font-style: italic;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+
+            &.css-task-success {
+                background-color: #28a745;
+                color: #FFF;
+            }
+
+            h3 {
+                font-size: 17px;
+
+                .css-icon {
+                    float: right;
+                    font-size: 15px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    
+                    &.css-remove { color: #bf1010; }
+                    &.css-success { color: #28a745; }
+                }
+            }
+        }
+    }
+}

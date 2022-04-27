@@ -1,0 +1,18 @@
+.input-group {
+    .css-search {
+        height: 50px;
+
+        &::-webkit-input-placeholder { /* Edge */
+            font-style: italic!important;
+        }
+          
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            font-style: italic!important;
+        }
+        
+        &::placeholder {
+            font-style: italic!important;
+        }
+    }
+}
+
