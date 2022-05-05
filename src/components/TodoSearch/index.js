@@ -3,8 +3,8 @@ import React from "react";
 // Context
 import { TodoContext } from '../../services/TodoContext'
 // Font Awesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 // Sass
 import './todo-search.scss';
 
@@ -26,7 +26,7 @@ function TodoSearch() {
                 onChange={ (e) => onSearch(e) }
                 value={ search }
             />
-            <button className="btn btn-primary" type="button" id="btn-search"><FontAwesomeIcon icon={solid('magnifying-glass')} /></button>
+            {/* <button className="btn btn-primary" type="button" id="btn-search"><FontAwesomeIcon icon={solid('magnifying-glass')} /></button> */}
         </div>
     ); 
 }
