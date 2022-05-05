@@ -1,8 +1,5 @@
 // React
 import React from "react";
-// Font Awesome
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 // Context 
 import { TodoContext } from "../services/TodoContext";
 // Components
@@ -33,10 +30,8 @@ function AppUI() {
             
             <TodoList>
                 { error && <div className="alert alert-danger">Opps, se ha producido un error</div> }
-                {/* { loading && <div className="alert alert-primary"><FontAwesomeIcon className="fa-spin-pulse" icon={ solid('spinner') } /> Cargando</div> } */}
                 { loading && <Loader /> }
                 { (!loading && total == 0) && <div className="alert alert-warning">Crear primer tarea</div> }
-                {/* { loading && <Loader /> } */}
                 
 
                 { todoList.map(todo => (
